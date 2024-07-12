@@ -18,7 +18,13 @@
 		<label for="gender_f">Female</label>
 		<input type="radio" id="gender_f" name="gender" required>
 		<label for="cars">Car Brands</label>
-		<input type="select" id="cars" required placeholder="--Please choose an option--">
+		<select id="cars" required>
+			<option value=""disabled selected>--Please choose an option--</option>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="mercedes">Mercedes</option>
+			<option value="audi">Audi</option>
+		</select>
 		<label for="age">Age</label>
 		<input type="number" id="age" required placeholder="Age">
 		<label for="dob">DOB</label>
@@ -26,9 +32,10 @@
 		<label for="tel">Phone Number</label>
 		<input type="tel" id="tel" required placeholder="xxx-xxx-xxxx">
 		<label for="password">Password</label>
-		<input type="password" required id="password" placeholder="Password">
+		<input type="password"  id="password" placeholder="Password">
 		<label for="tos">I agree to the TOS</label>
 		<input type="checkbox" id="tos" required>
+		<button type="submit">Submit</button>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
